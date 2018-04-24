@@ -459,6 +459,9 @@ html,body{
   color: #4285f4;
   font-weight: 800;
   width:95%;
+      white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .pmd-card-actions .btn:first-child {
