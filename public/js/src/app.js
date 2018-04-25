@@ -61,6 +61,7 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 		}
 		$("a#btn-send-message").click(function (e) {
 			sendMessage($("#btn-input"), e);
+			$("#btn-input").focus();
 		});
 		//Chatbox Send message
 		$("#btn-input").keypress(function (e) {
@@ -83,6 +84,7 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 				});
 			}
 			e.preventDefault();
+			$("#btn-input").focus();
 		});
 
 		$(document).on('click', '.cardresponsepayload', function (e) {
@@ -99,6 +101,7 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 				});
 			}
 			e.preventDefault();
+			$("#btn-input").focus();
 		});
 
 		$(document).on('click', '.caroselresponsepayload', function (e) {
@@ -117,6 +120,7 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 				});
 			}
 			e.preventDefault();
+			$("#btn-input").focus();
 
         });
         
@@ -135,6 +139,7 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 				});
 			}
 			e.preventDefault();			
+			$("#btn-input").focus();
 		});   
 	});
 
