@@ -37,6 +37,8 @@ router.post('/dialogflowAPI',function(req, res){
 				body.result.contexts.forEach(function(context){
 					
 					if(context.name == 'booknow-followup'){
+						config.mailBody = config.mailBody.replace("toName",context.parameters.name+' '+context.parameters.surname);
+						config.mailBody = config.mailBody.replace("orderId",'A123456');
 						mail.sendMail(context.parameters.email, config.mailBody);		
 					}
 				});				

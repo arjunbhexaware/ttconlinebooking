@@ -4,7 +4,7 @@ module.exports = {
 	mailBody:	`<pre>
 
 				Greetings toName,
-
+				Booking Id : orderId
 				Thank You very much for booking on Trafalgar & for giving us the opportunity to serve you. We will do our best to be sure we are ready for your travel, provide the best of experiences during the tour, all the amenities & luxuries we can and strive to provide you with our world class standards for exceptional service.
 
 				To complete the booking process & serve you better though, we will need the following additional details from your end:
